@@ -8,7 +8,7 @@ public class MainManager : MonoBehaviour
     public Color TeamColor; // new variable declared
 
     // Start() and Update() methods deleted - we don't need them right now
-    public static MainManager Instance;
+    public static MainManager Instance { get; private set; }
     private void Awake()
     {
         // start of new code
